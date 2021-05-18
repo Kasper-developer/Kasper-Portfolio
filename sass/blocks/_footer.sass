@@ -1,5 +1,6 @@
 .contacts
 	padding: 58px 0 148px 0
+	overflow-x: hidden
 	&-block
 		display: flex
 		justify-content: space-between
@@ -7,6 +8,7 @@
 	&-form
 		flex-basis: 51%
 		max-width: 380px
+		min-width: 250px
 		min-height: 410px
 		padding: 40px 36px 49px 35px
 		background: #FFFFFF
@@ -23,11 +25,9 @@
 			margin-bottom: 29px
 			margin-left: 13px
 		&__input-phone
-			border: 1px solid #000
 			margin-bottom: 17px
 			background: url('../img/footer/user-icon.svg') center left 20px no-repeat
 		&__input-mail
-			border: 1px solid #000
 			margin-bottom: 26px
 			background: url('../img/footer/phone-icon.svg') center left 20px no-repeat
 		&__button
@@ -66,3 +66,87 @@
 			line-height: 18px
 			text-decoration-line: underline
 			color: #A5A5A5
+
+@media screen and ( max-width: 915px )
+	.contacts
+		padding: 50px 0 100px 0
+		overflow-x: hidden
+		&-block
+			display: flex
+			justify-content: space-between
+			flex-direction: column
+			align-items: flex-start
+		&-form
+			flex-basis: 100%
+			margin-bottom: 64px
+		&-text
+			flex-basis: 49%
+		&-data
+			display: flex
+			flex-wrap: wrap
+			margin-bottom: 42px
+			&__title
+				font-weight: bold
+				font-size: 24px
+				line-height: 28px
+				margin-bottom: 16px
+			&__phone
+				flex-basis: 38%
+				margin-bottom: 50px
+			&__mail
+				flex-basis: 50%
+
+@media screen and ( max-width: 576px )
+	.contacts
+		padding: 47px 0 50px 0
+		overflow-x: hidden
+		&-title
+			font-size: 19px
+			line-height: 22px
+			text-align: center
+			margin-bottom: 48px
+		&-form
+			max-width: 380px
+			min-height: 410px
+			padding: 39px 19px 47px 19px
+			margin-left: 0
+			&__title
+				min-width: 216px
+				font-size: 15px
+				line-height: 140%
+				margin-bottom: 27px
+			&__button
+				width: 100%
+				font-size: 10px
+				line-height: 28px
+				padding: 17px 7px
+		&-text
+			flex-basis: 100%
+		&-data
+			display: flex
+			flex-wrap: wrap
+			margin-bottom: 28px
+			&__title
+				font-weight: bold
+				font-size: 18px
+				line-height: 21px
+				margin-bottom: 12px
+			&__phone
+				flex-basis: 100%
+				margin-bottom: 35px
+			&__mail
+				flex-basis: 100%
+				margin-bottom: 35px
+			&__social
+				flex-basis: 100%
+			&__link
+				display: block
+				margin-bottom: 17px
+				margin-right: 0
+				font-weight: normal
+				font-size: 14px
+				line-height: 16px
+			&__policy
+				font-size: 15px
+				line-height: 18px
+				margin-top: 28px
